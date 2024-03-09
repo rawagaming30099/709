@@ -257,11 +257,13 @@ logo ="""
        °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
       >    ➥  ŴELCOME MY TOOL ≺RAWA≻<
       °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
-      VERSION 2.5
+      VERSION 2.5🇩🇪
+      RECORD WOOLD M416 LIVL 5🐒
+      SEE AM VESRSIONA BKA ENJA SAERY KA
       VESRION COOMING ZOON🐺
       FILE VIP OK DENET🐆
       PASSWORD TOOL 21 SLOW BEST🐌
-      
+      fuck you arabic🐊
      
           
    
