@@ -38,7 +38,7 @@ def timerr(t):
         elif online_datetime !=kat:
            t +=1
            if t ==2:
-               print('Not Bypass ')
+               
                exit()
            else:
                timerr(t)
