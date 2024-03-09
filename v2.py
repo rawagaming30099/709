@@ -1,33 +1,57 @@
-import os
-import sys
-import time
-import requests,bs4,json,os,sys,random,datetime,time,re
-from datetime import *
-def stoped(y=0,m=0,d=0):
- date = datetime.now()
- if len(list(str(y))) == 4:
-  if m <= 11 and m > 0:
-   if d <= 6 and d > 0:
-    if date.year <= y:
-     if date.month <= m:
-      if date.day < d:
-       return True
-x = stoped(2024,3,16)
-os.system('xdg-open  https://t.me/KILLER_CRACKeER')
-if x:pass
-else:quit('This tool hass ben expired')
-os.system('https://t.me/KILLER_CRACKeER')
-print("TOLL WORKING @l4m_rawa")
-import os
+from urllib.request import urlopen
+import json
+from datetime import datetime
 try:
-	import requests
+    import requests
 except ImportError:
-	os.system("pip install requests")
+    os.system('pip3 install requests')
+import datetime
+t =0
+def timerr(t):
 
-try:
-	import concurrent.futures
-except ImportError:
-	os.system("pip install futures")
+        try:
+            with urlopen('http://worldtimeapi.org/api/timezone/Asia/Baghdad') as response:
+                data = json.loads(response.read())
+                date_time_obj = datetime.datetime.fromisoformat(data['datetime'])
+                online_datetime = date_time_obj.replace(tzinfo =None, second=0, microsecond=0)
+                
+                date_time_obj = date_time_obj.replace(second=0, microsecond=0, tzinfo=None)
+        except urllib.error.URLError:
+            print('Internet Connection Error')
+            exit()
+        try:
+            response = requests.get('https://worldtimeapi.org/api/timezone/Asia/Baghdad')
+            data = response.json()
+            online_datetime = datetime.datetime.fromisoformat(data['datetime'])
+            
+        
+            local_datetime = datetime.datetime.now()
+            
+            online_datetime = online_datetime.replace(tzinfo =None, second=0, microsecond=0)
+            kat = local_datetime.replace(second=0, microsecond=0)
+        except requests.exceptions.SSLError:
+            print('Do Not Bypass Thats Made By Sasuke! ')
+            exit()
+        if online_datetime ==kat and online_datetime ==local_datetime:
+           
+           pass
+        elif online_datetime !=kat:
+           t +=1
+           if t ==2:
+               print('Not Bypass ')
+               exit()
+           else:
+               timerr(t)
+
+timerr(t)
+import time
+kat = time.strftime("%m/%d/%Y, %H:%M:%S")
+date = '3/12/2024, 24:00:00'
+if date <= kat:
+    print("   toolaka ragerawa ")
+    print("   bo kren @i4m_killer & @l4m_rawa")
+    exit()
+    
 import requests,bs4,json,os,sys,random,datetime,time,re
 import urllib3,rich,base64
 from rich.table import Table as me
@@ -43,8 +67,9 @@ from rich.text import Text as tekz
 from time import localtime as lt
 pretty.install()
 CON=sol()
+os.system('xdg-open  https://t.me/KILLER_SHOPPING')
  #------------------[ 3ala ]-------------------#
-
+os.system('xdg-open  https://t.me/KILLER_SHOPPING')
 #------------------[ 3ala ]-------------------#
 #------------------[ USER-AGENT ]-------------------#
 #------------------[ USER-AGENT ]-------------------#
