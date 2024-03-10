@@ -28,7 +28,7 @@ t=(mmmm + "/" + dddd + "/" + yyyy + " " + hour + ":" + mi + ":" + ss)
 
 hours = (now.hour)
 x = datetime.datetime.now()
-g= datetime.datetime(2024, 3, 4, 8, 00 ,0)
+g= datetime.datetime(2024, 17, 4, 8, 00 ,0)
 
 if (x.strftime("%x"))>(g.strftime("%x")):
  print('\n\n')
@@ -43,7 +43,7 @@ if (x.strftime("%x"))==(g.strftime("%x")):
    print('')
    if(x.strftime("%X"))>(g.strftime("%X")):
     print('\n\n')
-    print("    "+ 'WARING⛔ THE TOOL CODEING BY CODER \nTOOL EXPIERE BRO⛔\nBO KRINI TOOL NAMA BNERA BO‌  @')
+    print("    "+ 'WARING⛔ THE TOOL CODEING BY CODER \nTOOL EXPIERE BRO⛔\nBO KRINI TOOL NAMA BNERA BO‌  @l4m_rawa')
     print('\n\n')
     print(x)
     
@@ -81,8 +81,8 @@ logo =f"""
 ██████████▄▄▄▄▄▄▄██████████
 ██████████████████████████
 anther + RAWA🔥
-VESION + 1.5🎃
-STATUS + 1 MANG BA 5$
+VESION + 1.5🔥👌
+
 
 
 ------------------------------------------------------------                              NEW UPDATE 172EXPRID⛔
@@ -102,11 +102,88 @@ cokbrut=[]
 ses=requests.Session()
 princp=[]
 try:
-	prox= requests.get('https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all').text
-	open('.prox.txt','w').write(prox)
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/KING/main/socks5.txt').text
+	open('.socks5.txt','w').write(prox) 
 except Exception as e:
-	print('[[\x1b[1;92mâ€¢\x1b[1;97m] [\x1b[1;96mAlvino_adijaya_xy')
-prox=open('.prox.txt','r').read().splitlines()
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/KING/main/socks4.txt').text
+	open('.socks4.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://github.com/Chigozieworldwide/KING/blob/main/https.txt').text
+	open('.https.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/KING/main/http.txt').text
+	open('.http.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/http.txt').text
+	open('.http.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/https.txt').text
+	open('.https.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/socks4.txt').text
+	open('.socks4.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/socks5.txt').text
+	open('.socks5.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XCARET/main/http.txt').text
+	open('.http.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XCARET/main/https.txt').text
+	open('.https.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XCARET/main/socks4.txt').text
+	open('.socks4.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XCARET/main/socks5.txt').text
+	open('.socks5.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
 for xd in range(10000):
     aa='Mozilla/5.0 (Linux; Android '
     b=random.choice(['5.0','6.0','7.0','8.1.0','9','10','11','12'])
