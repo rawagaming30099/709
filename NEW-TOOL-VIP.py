@@ -14,45 +14,7 @@ from time import localtime as lt
 pretty.install()
 CON=sol()
 import datetime
-now = datetime.datetime.today()
 
-now = datetime.datetime.today()
-mmmm = str(now.month)
-dddd = str(now.day)
-yyyy = str(now.year)
-hour = str(now.hour)
-mi = str(now.minute)
-ss = str(now.second)
-t=(mmmm + "/" + dddd + "/" + yyyy + " " + hour + ":" + mi + ":" + ss)
-
-
-hours = (now.hour)
-x = datetime.datetime.now()
-g= datetime.datetime(2024, 17, 4, 8, 00 ,0)
-
-if (x.strftime("%x"))>(g.strftime("%x")):
- print('\n\n')
- print("    "+ 'WARING⛔ THE TOOL CODEING BY CODER 1551\nTOOL EXPIERE BRO⛔\nBO KRINI TOOL NAMA BNERA BO @NiKlaus_1551')
- print('\n\n')
- print(x)
- 
- sys.exit(0)
- 
-
-if (x.strftime("%x"))==(g.strftime("%x")):
-   print('')
-   if(x.strftime("%X"))>(g.strftime("%X")):
-    print('\n\n')
-    print("    "+ 'WARING⛔ THE TOOL CODEING BY CODER \nTOOL EXPIERE BRO⛔\nBO KRINI TOOL NAMA BNERA BO‌  @l4m_rawa')
-    print('\n\n')
-    print(x)
-    
-    sys.exit(0)
-   else:
-    print('')  
-else:
-    print('')
-print('')
 
 
 os.system('clear')
