@@ -14,7 +14,7 @@ from time import localtime as lt
 pretty.install()
 CON=sol()
 #--------------------[ BAGIAN-MASUK ]--------------#
-def DYNO():
+def DYNO():.
 	try:
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
