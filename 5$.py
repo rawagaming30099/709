@@ -349,12 +349,7 @@ def passwrd():
 					pwv.append('12'+frs)
 					pwv.append('123'+frs)
 					pwv.append('1234'+frs)
-					pwv.append('12345'+frs)
-					pwv.append('123456'+frs)
-					pwv.append('1234567'+frs)
-					pwv.append('12345678'+frs)
-					pwv.append('123456789'+frs)
-					pwv.append('1234567890'+frs)
+					
 					
 					
 			else:
@@ -382,12 +377,7 @@ def passwrd():
 					pwv.append('12'+frs)
 					pwv.append('123'+frs)
 					pwv.append('1234'+frs)
-					pwv.append('12345'+frs)
-					pwv.append('123456'+frs)
-					pwv.append('1234567'+frs)
-					pwv.append('12345678'+frs)
-					pwv.append('123456789'+frs)
-					pwv.append('1234567890'+frs)
+					
 			if 'ya' in pwpluss:
 				for xpwd in pwnya:
 					pwv.append(xpwd)
