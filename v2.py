@@ -555,7 +555,7 @@ def setting():
             xx = random.randint(0,len(id2))
             id2.insert(xx,bacot)
     print('\033[0;92m==================')
-    print("\033[97;1m[\033[92;1m1\033[97;1m] 𝐌𝐄𝐓𝐇𝐎𝐃  𝟏 [𝐔𝐏𝐃𝐀𝐓𝐄] \x1b[33m[1\x1b[33m] \x1b[33m[\033[0;92m \x1b[36mMETHOD \x1b[33m]")
+    print("\033[97;1m[\033[92;1m1\033[97;1m] 𝐌𝐄𝐓𝐇𝐎𝐃  𝟏 [𝐔𝐏𝐃𝐀𝐓𝐄] \x1b[33m[1\x1b[33m] \x1b[33m[\033[0;92m \x1b")
     print('\033[0;92m==================')
     hc = input('\033[97;1m[\033[92;1m•\033[97;1m] HALBZHERA= : ')
     if hc in ['1','01']:
@@ -571,11 +571,8 @@ def setting():
  
 def passwrd():
     print("")
-    print("\033[97;1m[\033[92;1m➢\033[97;1m] RAWA \x1b[33m[➢\x1b[33m] \x1b[33m[\033[0;92mTODAY \x1b[36mDATE\x1b[33m] :\033[1;92m "+date)
-    print('\033[97;1m[\033[92;1m➢\033[97;1m] 3ALA \x1b[33m[➢\x1b[33m] \x1b[33m[\033[0;92m𝐈𝐃𝐄𝐊𝐀𝐍 \x1b[36mID\x1b[33m] : ',str(len(id)))
-    print("\033[97;1m[\033[92;1m➢\033[97;1m] RAWA \x1b[33m[➢\x1b[33m] \x1b[33m[\033[0;92m𝐊𝐀𝐓 \x1b[36mTIME\x1b[33m] : \033[1;92m"+time.strftime("%H:%M")+" "+ tag)
-    print("\033[97;1m[\033[92;1m➢\033[97;1m] RAWA \x1b[33m[➢\x1b[33m] \x1b[33m[\033[0;92m𝐂𝐇𝐀𝐖𝐀𝐑𝐄 𝐁𝐀  \x1b[36m\x1b[33m]")
-    print('\033[0;96m===============================================')
+    
+    print('\033[0;96m⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️')
     with tred(max_workers=30) as pool:
         for yuzong in id2:
             idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -649,7 +646,7 @@ def passwrd():
 def crack(idf,pwv):
     global loop,ok,cp
     bo = random.choice([m,k,h,b,u,x])
-    sys.stdout.write(f"\r{bo} [𝐑𝐀𝐖𝐀⚡️] {h}{loop}|{len(id)} | 𝐎𝐊:-{h}{ok} ")
+    sys.stdout.write(f"\r{bo} [𝐑𝐀𝐖𝐀⚡️] {h}{loop}➡️{len(id)} ➡️ 𝐎𝐊:-{h}{ok} ")
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua2 = random.choice(ugen2)
