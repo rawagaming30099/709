@@ -1,41 +1,32 @@
 
 
-# Modul
-import hashlib
-import requests
-import sys
-import platform
-import time
-import datetime
-import sys
-import time
-import requests
-import requests
-import random
-import platform
-import datetime
-import requests
-import sys
-import time
-import base64
-import subprocess
-import hashlib
-import requests
-from concurrent.futures import ThreadPoolExecutor
-import datetime  # Added for time calculation
-from rich.table import Table as me
-from rich.console import Console as sol
-from bs4 import BeautifulSoup as sop
-from concurrent.futures import ThreadPoolExecutor as tred
-from rich.console import Group as gp
-from rich.panel import Panel as nel
-import base64
-from rich import print as cetak
-from rich.markdown import Markdown as mark
-from rich.columns import Columns as col
-from urllib.parse import quote
-import requests,bs4,json,os,sys,random,time,re
-import urllib3,rich,base64
+### Import Module
+import os
+try:
+    import requests
+except ImportError:
+    print('\n [×] requests module not installed!...\n')
+    os.system('pip install requests')
+
+try:
+    import concurrent.futures
+except ImportError:
+    print('\n [×] Futures module not installed!...\n')
+    os.system('pip install futures')
+
+try:
+    import bs4
+except ImportError:
+    print('\n [×] Bs4 module not installed!...\n')
+    os.system('pip install bs4')
+
+import requests, os, re, bs4, sys, json, time, random, datetime, subprocess, threading, itertools,base64
+from concurrent.futures import ThreadPoolExecutor as AzimVau
+from datetime import datetime
+from bs4 import BeautifulSoup
+def xoshnaw():
+  uuid = str(os.geteuid()) + str(os.getlogin())
+
 import requests,bs4,json,os,sys,random,datetime,time,re
 import urllib3,rich,base64,uuid
 from rich.table import Table as me
@@ -52,84 +43,76 @@ from rich import pretty
 from rich.text import Text as tekz
 pretty.install()
 CON=sol()
-#DATE AND TIME
-now = datetime.now()
-dt_string = now.strftime("%H:%M")
-current = datetime.now()
-ta = current.year
-bu = current.month
-ha = current.day
-
-
-try:
-    prox = requests.get('https://github.com/B51Fire1/proxy/blob/main/Proxy.txt').text
-    open('.prox.txt','w').write(prox)
-except Exception as e:
-    pass
-prox=open('.prox.txt','r').read().splitlines()
-
-try: 
-	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
-	open('.prox.txt','w').write(prox) 
-except Exception as e:
-	pass
-prox=open('.prox.txt','r').read().splitlines()
-
-
-#USER-AGENTS
+#useragent
 ugen2=[]
 ugen=[]
 cokbrut=[]
 ses=requests.Session()
 princp=[]
+os.system("pip install marshal")
+try:
+	prox= requests.get('https://github.com/DFD4x/TOOLxFB/blob/main/.DFD-IP.txt').text
+	open('.DFD-IP.txt','w').write(prox)
+except Exception as e:
+	print('')
+prox=open('.DFD-IP.txt','r').read().splitlines()
 for xd in range(10000):
-        a='Mozilla/5.0 (Symbian/3; Series60/'
-        b=random.randrange(1, 9)
-        c=random.randrange(1, 9)
-        d='Nokia'
-        e=random.randrange(100, 9999)
-        f='/110.021.0028; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/'
-        g=random.randrange(1, 9)
-        h=random.randrange(1, 4)
-        i=random.randrange(1, 4)
-        j=random.randrange(1, 4)
-        k='Mobile Safari/535.1'
-        uaku1=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
-        ugen.append(uaku1)
+	a='Mozilla/5.0 (Symbian/3; Series60/'
+	b=random.randrange(1, 9)
+	c=random.randrange(1, 9)
+	d='Nokia'
+	e=random.randrange(100, 9999)
+	f='/110.021.0028; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/'
+	g=random.randrange(1, 9)
+	h=random.randrange(1, 4)
+	i=random.randrange(1, 4)
+	j=random.randrange(1, 4)
+	k='Mobile Safari/535.1'
+	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
+	ugen2.append(uaku)
 
 
-        aa='Mozilla/5.0 (Linux; U; Android'
-        b=random.choice(['6','7','8','9','10','11','12'])
-        c=' en-us; GT-'
-        d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-        e=random.randrange(1, 999)
-        f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-        g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-        h=random.randrange(73,100)
-        i='0'
-        j=random.randrange(4200,4900)
-        k=random.randrange(40,150)
-        l='Mobile Safari/537.36'
-        uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-        ugen.append(uaku2)
-
-        a='Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S'
-        b=random.randrange(100, 9999)
-        c=random.randrange(100, 9999)
-        d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-        e=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-        f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-        g=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-        h=random.randrange(1, 9)
-        i='; U; Bada/1.2; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/'
-        j=random.randrange(1, 9)
-        k=random.randrange(1, 9)
-        l='Mobile WVGA SMM-MMS/1.2.0 OPN-B'
-        uaku3=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
-        ugen2.append(uaku3)
-#PROXYGEN
-
-
+	aa='Mozilla/5.0 (Linux; U; Android'
+	b=random.choice(['6','7','8','9','10','11','12'])
+	c=' en-us; GT-'
+	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	e=random.randrange(1, 999)
+	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	h=random.randrange(73,100)
+	i='0'
+	j=random.randrange(4200,4900)
+	k=random.randrange(40,150)
+	l='Mobile Safari/537.36'
+	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
+	ugen.append(uaku2)
+for x in range(10):
+	a='Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S'
+	b=random.randrange(100, 9999)
+	c=random.randrange(100, 9999)
+	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	e=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	g=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	h=random.randrange(1, 9)
+	i='; U; Bada/1.2; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/'
+	j=random.randrange(1, 9)
+	k=random.randrange(1, 9)
+	l='Mobile WVGA SMM-MMS/1.2.0 OPN-B'
+	uak=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
+def uaku():
+	try:
+		ua=open('DFD-MOBILE.txt','r').read().splitlines()
+		for ub in ua:
+			ugen.append(ub)
+	except:
+		a=requests.get('https://github.com/HamaCracker1/List/blob/main/list.txt').text
+		ua=open('.DFD-MOBILE.txt','w')
+		aa=re.findall('line">(.*?)<',str(a))
+		for un in aa:
+			ua.write(un+'\n')
+		ua=open('.DFD-MOBILE.txt','r').read().splitlines()
+# INDICATION
 id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
 cokbrut=[]
 pwpluss,pwnya=[],[]
