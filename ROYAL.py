@@ -1,75 +1,204 @@
-## Author = Meledak XD
-## Recode bebas asal hargai pembiat sc nya
-import requests,bs4,json,os,sys,random,datetime,time,re
-import urllib3,rich,base64
-from rich.tree import Tree
-from rich import print as cetak
+# Modul
+import hashlib
+import requests
+import sys
+import platform
+import time
+import datetime
+import sys
+import time
+import requests
+import requests
+import random
+import platform
+import datetime
+import requests
+import sys
+import time
+import base64
+import subprocess
+import hashlib
+import requests
+from concurrent.futures import ThreadPoolExecutor
+import datetime  # Added for time calculation
 from rich.table import Table as me
 from rich.console import Console as sol
 from bs4 import BeautifulSoup as sop
-from rich.progress import Progress,BarColumn,TextColumn,TimeElapsedColumn
-from rich.progress import SpinnerColumn
 from concurrent.futures import ThreadPoolExecutor as tred
+from rich.console import Group as gp
+from rich.panel import Panel as nel
+import base64
+from rich import print as cetak
+from rich.markdown import Markdown as mark
+from rich.columns import Columns as col
+from urllib.parse import quote
+import requests,bs4,json,os,sys,random,time,re
+import urllib3,rich,base64
+import requests,bs4,json,os,sys,random,datetime,time,re
+import urllib3,rich,base64,uuid
+from rich.table import Table as me
+from rich.console import Console as sol
+from bs4 import BeautifulSoup as sop
+from concurrent.futures import ThreadPoolExecutor as tred
+from rich.console import Group as gp
 from rich.panel import Panel as nel
 from rich import print as cetak
+from rich.markdown import Markdown as mark
 from rich.columns import Columns as col
-from rich import print as prints
+from rich import print as rprint
 from rich import pretty
 from rich.text import Text as tekz
-###----------[ WARNA PRINT RICH ]---------- ###
-M2 = "[#FF0000]" # MERAH
-H2 = "[#00FF00]" # HIJAU
-K2 = "[#FFFF00]" # KUNING
-B2 = "[#00C8FF]" # BIRU
-P2 = "[#FFFFFF]" # PUTIH
-try:
-	file_color = open("data/theme_color","r").read()
-	color_text = file_color.split("|")[0]
-	color_panel = file_color.split("|")[1]
-except:
-	color_text = "[#00C8FF]"
-	colorbapa = random.choice([H2,K2,M2,B2,P2]) 
-	color_panel = "#00C8FF"
 pretty.install()
 CON=sol()
+#----------[ DATA-TIME ]----------#
+from bs4 import BeautifulSoup as sop
+import requests,bs4,json,os,sys,random,datetime,time,re
+import requests
+cookies = {
+    'datr': 'iZ2xY04E3jAca46uaLOJLWbL',
+    'sb': 'iZ2xYyI7oe2HAXvfOpqjNV2N',
+    'locale': 'fa_IR',
+    'vpd': 'v1%3B737x393x2.75',
+    'wd': '393x737',
+    'fr': '03qbkrBnVS1MbxzdF.AWWPF12j03FKAckquOtOJksxRdQ.BjsZ2J.Dd.AAA.0.0.BjtnKl.AWWZYuLXi94',
+}
+
+headers = {
+    'authority': 'mbasic.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'accept-language': 'fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7',
+    'cache-control': 'max-age=0',
+    # 'cookie': 'datr=iZ2xY04E3jAca46uaLOJLWbL; sb=iZ2xYyI7oe2HAXvfOpqjNV2N; locale=fa_IR; vpd=v1%3B737x393x2.75; wd=393x737; fr=03qbkrBnVS1MbxzdF.AWWPF12j03FKAckquOtOJksxRdQ.BjsZ2J.Dd.AAA.0.0.BjtnKl.AWWZYuLXi94',
+    'origin': 'https://mbasic.facebook.com',
+    'referer': 'https://mbasic.facebook.com/',
+    'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36',
+}
+
+params = {
+    'refid': '8',
+}
+
+data = {
+    'lsd': 'AVqAhQPrMiI',
+    'jazoest': '2963',
+    'uid': '100076526146833',
+    'flow': 'login_no_pin',
+    'next': '',
+}
+
+response = requests.post(
+    'https://mbasic.facebook.com/login/device-based/validate-pin/',
+    params=params,
+    cookies=cookies,
+    headers=headers,
+    data=data,
+)
+import urllib3,rich,base64
+from rich.table import Table as me
+from rich.console import Console as sol
+from bs4 import BeautifulSoup as sop
+from concurrent.futures import ThreadPoolExecutor as tred
+from rich.console import Group as gp
+from rich.panel import Panel as nel
+from rich import print as cetak
+from rich.markdown import Markdown as mark
+from rich.columns import Columns as col
+from rich import print as rprint
+from rich import pretty
+from rich.text import Text as tekz
+import time
+from datetime import date
+from datetime import datetime
+from time import sleep
+from time import sleep as waktu
+pretty.install()
+CON=sol()
+#DATE AND TIME
+now = datetime.now()
+dt_string = now.strftime("%H:%M")
+current = datetime.now()
+ta = current.year
+bu = current.month
+ha = current.day
+
+
+try:
+    prox = requests.get('https://github.com/B51Fire1/proxy/blob/main/Proxy.txt').text
+    open('.prox.txt','w').write(prox)
+except Exception as e:
+    pass
+prox=open('.prox.txt','r').read().splitlines()
+
+try: 
+	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
+	open('.prox.txt','w').write(prox) 
+except Exception as e:
+	pass
+prox=open('.prox.txt','r').read().splitlines()
+
+
+#USER-AGENTS
 ugen2=[]
-twf=[]
 ugen=[]
-proxxy=[]
-dump=[]
 cokbrut=[]
 ses=requests.Session()
 princp=[]
+for xd in range(10000):
+        a='Mozilla/5.0 (Symbian/3; Series60/'
+        b=random.randrange(1, 9)
+        c=random.randrange(1, 9)
+        d='Nokia'
+        e=random.randrange(100, 9999)
+        f='/110.021.0028; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/'
+        g=random.randrange(1, 9)
+        h=random.randrange(1, 4)
+        i=random.randrange(1, 4)
+        j=random.randrange(1, 4)
+        k='Mobile Safari/535.1'
+        uaku1=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
+        ugen.append(uaku1)
 
-for apa in range(10000):
-    a='Mozilla/5.0 (Symbian/3; Series60/5.2'
-    b=random.randrange(1, 9)
-    c=random.randrange(1, 9)
-    d='NokiaN8-00/012.002;'
-    e=random.randrange(100, 9999)
-    f='Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/'
-    g=random.randrange(1, 9)
-    h=random.randrange(1, 4)
-    i=random.randrange(1, 4)
-    j=random.randrange(1, 4)
-    k='7.3.0 Mobile Safari/533.4 3gpp-gba'
-    uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
-    ugen2.append(uaku) 
-	###----------[ User Agent Linux ]---------- ###
-    aa='Mozilla/5.0 (X11;'
-    b=random.choice(['6','7','8','9','10','11','12'])
-    c='Linux x86_64)'
-    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    e=random.randrange(1, 999)
-    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0'
-    h=random.randrange(73,100)
-    i='0'
-    j=random.randrange(4200,4900)
-    k=random.randrange(40,150)
-    l='Safari/537.36'
-    uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-    ugen.append(uaku2)
+
+        aa='Mozilla/5.0 (Linux; U; Android'
+        b=random.choice(['6','7','8','9','10','11','12'])
+        c=' en-us; GT-'
+        d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+        e=random.randrange(1, 999)
+        f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+        g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+        h=random.randrange(73,100)
+        i='0'
+        j=random.randrange(4200,4900)
+        k=random.randrange(40,150)
+        l='Mobile Safari/537.36'
+        uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
+        ugen.append(uaku2)
+
+        a='Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S'
+        b=random.randrange(100, 9999)
+        c=random.randrange(100, 9999)
+        d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+        e=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+        f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+        g=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+        h=random.randrange(1, 9)
+        i='; U; Bada/1.2; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/'
+        j=random.randrange(1, 9)
+        k=random.randrange(1, 9)
+        l='Mobile WVGA SMM-MMS/1.2.0 OPN-B'
+        uaku3=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
+        ugen2.append(uaku3)
+#PROXYGEN
+
+
 id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
 cokbrut=[]
 pwpluss,pwnya=[],[]
