@@ -719,7 +719,6 @@ def crack(idf,pwv):
 
  
 #-----------------------[ SYSTEM-CONTROL ]--------------------#
-
 def cek_SURCHY(kuki):
  session = requests.Session()
  w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":"noscript=1;"+kuki}).text
